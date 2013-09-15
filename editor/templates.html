@@ -3,28 +3,23 @@
         <div class="output"></div>
         <div class="explanation center-exp"></div>
         <div class="answer"></div>
-        <div class="call"></div>
+        <div class="call"><span class="call-result"></span></div>
     </div>
 </script>
 
 <script type="text/template" id="template_tryit">
     <div class="tryit-content center-exp">
-        <table class="tool">
-            <tr>
-                <td>
-                    <input type="text" value="test">
-                </td>
-                <td>
-                    <button class="bn-check btn">Action</button>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" class="checkio-result">
-                    Result:<br>
-                    <span class="checkio-result-in">&nbsp;</span>
-                </td>
-            </tr>
+        <div class="tooltip">
+            Enter a number:
+        </div>
+        <div class="tool">
+            <input type="number" class="input-number" min="1" max="3999" value="1">
+            <input type="button" class="bn-check btn" value="Convert">
+            <div class="checkio-result center-exp">
+                Result:
+                <span class="checkio-result-in">&nbsp;</span>
+            </div>
 
-        </table>
+        </div>
     </div>
 </script>

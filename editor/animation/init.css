@@ -68,6 +68,16 @@
     padding: 3px;
 }
 
+
+.tryit-content .tooltip{
+    text-align: center;
+    /*float: left;*/
+    /*position: absolute;*/
+    font-size: 14px;
+    margin: 5px 0 5px 0;
+
+}
+
 /*it for firefox*/
 .tryit-content .tool tr:first-child td:last-child {
     height: 20%;
