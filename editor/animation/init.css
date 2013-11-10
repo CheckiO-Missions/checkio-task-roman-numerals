@@ -59,13 +59,13 @@
 
 .tryit-content {
     background-color: #dfe8f7;
-    font-family: verdana;
+    font-family: Verdana, Arial, sans-serif;
 }
 
-.tryit-content .tool td{
+.tryit-content .tool *{
     text-align: center;
     vertical-align: top;
-    padding: 3px;
+    margin: 5px;
 }
 
 
@@ -75,6 +75,8 @@
     /*position: absolute;*/
     font-size: 14px;
     margin: 5px 0 5px 0;
+    font-family: Verdana, Arial, sans-serif;
+    color: #294270;
 
 }
 
