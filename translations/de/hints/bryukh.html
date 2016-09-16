@@ -1,0 +1,67 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung wo ich mit der Lösung anfangen soll.
+    </div>
+    <div class="answer">
+        Du kannst eine Folge von Zeichen oder Digrafen mit Werten verwenden.
+<pre class="brush: python">
+ROMANS = (('M',  1000),
+          ('CM', 900),
+          ('D',  500),
+          ('CD', 400),
+          ('C',  100),
+          ('XC', 90),
+          ('L',  50),
+          ('XL', 40),
+          ('X',  10),
+          ('IX', 9),
+          ('V',  5),
+          ('IV', 4),
+          ('I',  1))
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich brauche etwas Hilfe um weiter zu kommen.
+    </div>
+    <div class="answer">
+        <!-- #TODO: delete "and" from english version-->
+        Mit diesem Array kannst Du versuchen, den Wert für jedes Element in
+        römischer Form zu reduzieren.
+<pre class="brush: python">
+for roman, value in ROMAN:
+    while number >= value:
+        number -= value
+        ....
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich bin auf halbem Wege verloren. Ich brauche Hilfe!
+    </div>
+    <div class="answer">
+        Bilde das Ergebnis aus einem leeren String.
+<pre class="brush: python">
+roman_numeral = ""
+...
+    ...
+        ...
+        roman_numeral += roman
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich komme nicht mehr weiter. Ich brauche einen kleinen Hinweis.
+    </div>
+    <div class="answer">
+        Die vorherigen Hinweise liefern Dir alles, was Du brauchst, um diese
+        Aufgabe lösen zu können.
+    </div>
+</div>
+
+
+</body>
