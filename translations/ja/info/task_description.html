@@ -1,56 +1,71 @@
+<style>
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  td, th {
+    border: 1px solid black;
+    padding: 8px;
+    width: 50%;
+  }
+</style>
+
 <div style="text-align: center">
-        <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
+  <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
 </div>
 
 <p>
-    ローマ数字は古代ローマから伝わる数値の表記法です。
-    それらは値の合計(または幾つかのケースに置いて差分)を表現するために組み合わせられる
-    特定のアルファベットに基づいています。
-    1から10までのローマ数字は以下のとおりです。
+  ローマ数字は古代ローマから伝わる数値の表記法です。
+  それらは値の合計(または幾つかのケースに置いて差分)を表現するために組み合わせられる
+  特定のアルファベットに基づいています。
+  1から10までのローマ数字は以下のとおりです。
 </p>
+
 <p>I, II, III, IV, V, VI, VII, VIII, IX, and X.</p>
+
 <p>
-    ローマ数字は10進数に基づいていますが、位取りが直接的でなく、ゼロを含める事ができません。
-    ローマ数字は以下の7つの記号の組み合わせで構成されています。
+  ローマ数字は10進数に基づいていますが、位取りが直接的でなく、ゼロを含める事ができません。
+  ローマ数字は以下の7つの記号の組み合わせで構成されています。
 </p>
-<ul>
-  <li>記号とその値</li>
-  <li><strong>I</strong> 1 (unus)</li>
-  <li><strong>V</strong> 5 (quinque)</li>
-  <li><strong>X</strong> 10 (decem)</li>
-  <li><strong>L</strong> 50 (quinquaginta)</li>
-  <li><strong>C</strong> 100 (centum)</li>
-  <li><strong>D</strong> 500 (quingenti)</li>
-  <li><strong>M</strong> 1,000 (mille)</li>
-</ul>
+
+<table>
+  <tr><th>Numeral</th><th>Value</th></tr>
+  <tr><td>I</td><td>1 (unus)</td></tr>
+  <tr><td>V</td><td>5 (quinque)</td></tr>
+  <tr><td>X</td><td>10 (decem)</td></tr>
+  <tr><td>L</td><td>50 (quinquaginta)</td></tr>
+  <tr><td>C</td><td>100 (centum)</td></tr>
+  <tr><td>D</td><td>500 (quingenti)</td></tr>
+  <tr><td>M</td><td>1,000 (mille)</td></tr>
+</table>
+
 <p>ローマ数字に関する、より詳細な情報は
-<a href="http://en.wikipedia.org/wiki/Roman_numerals" target="_blank">Wikipediaの記事</a>
-より参照できます。
+  <a href="http://en.wikipedia.org/wiki/Roman_numerals" target="_blank">Wikipediaの記事</a>
+  より参照できます。
 </p>
 
 <p>
-この問題では、1から3999までの整数値を使ってローマ数字を返さなければいけません。
+  この問題では、1から3999までの整数値を使ってローマ数字を返さなければいけません。
 </p>
 
 <p>
-<strong>入力: </strong> 整数値
+  <strong>入力: </strong> 整数値
 </p>
 
 <p>
-<strong>出力: </strong> ローマ数字(文字列)
+  <strong>出力: </strong> ローマ数字(文字列)
 </p>
 
 <div class="for_info_only">
- <p>
-   <strong>例:</strong>
- </p>
+  <p><strong>例:</strong></p>
 
- <pre class="brush: python">checkio(6) == 'VI'
-  checkio(76) == 'LXXVI'
-  checkio(13) == 'XIII'
-  checkio(44) == 'XLIV'
-  checkio(3999) == 'MMMCMXCIX'
- </pre>
+  <pre class="brush: python">checkio(6) == 'VI'
+checkio(76) == 'LXXVI'
+checkio(13) == 'XIII'
+checkio(44) == 'XLIV'
+checkio(3999) == 'MMMCMXCIX'
+  </pre>
 </div>
 
 <p class="for_info_only">

@@ -1,72 +1,91 @@
+<style>
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  td, th {
+    border: 1px solid black;
+    padding: 8px;
+    width: 50%;
+  }
+</style>
+
 <div style="text-align: center">
-        <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
+  <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
 </div>
 
 <p>
-    Die römischen Zahlen stammen aus dem alten römischen Zahlensystem.
-    Sie basieren auf bestimmten Buchstaben des Alphabets.
-    Addiert man die Werte der römischen Ziffern, ergibt die Summe (oder
-    in einigen Fällen die Differenz) die Zahl.
+  Die römischen Zahlen stammen aus dem alten römischen Zahlensystem.
+  Sie basieren auf bestimmten Buchstaben des Alphabets.
+  Addiert man die Werte der römischen Ziffern, ergibt die Summe (oder
+  in einigen Fällen die Differenz) die Zahl.
 </p>
-<p>Die ersten zehn römischen Zahlen lauten:
-    I, II, III, IV, V, VI, VII, VIII, IX, und X.
-</p>
+
 <p>
-    Das römische Zahlensystem basiert auf den Basiszahlen 5 und 10.
-    Abgesehen von der Subtraktionsregel ist der Wert einer Ziffer unabhängig von
-    deren Position.<br>
-    Außerdem kennt das römische Zahlensystem keine Null.
+  Die ersten zehn römischen Zahlen lauten:
+  I, II, III, IV, V, VI, VII, VIII, IX, und X.
 </p>
-<!-- #TODO: make this a table -->
+
+<p>
+  Das römische Zahlensystem basiert auf den Basiszahlen 5 und 10.
+  Abgesehen von der Subtraktionsregel ist der Wert einer Ziffer unabhängig von
+  deren Position.<br>
+  Außerdem kennt das römische Zahlensystem keine Null.
+</p>
+
 <p>Römische Zahlen ergeben sich aus Kombinationen dieser sieben Symbole:</p>
-<ul>
-    <li>Symbol Wert</li>
-    <li><strong>I</strong> 1 (unus)</li>
-    <li><strong>V</strong> 5 (quinque)</li>
-    <li><strong>X</strong> 10 (decem)</li>
-    <li><strong>L</strong> 50 (quinquaginta)</li>
-    <li><strong>C</strong> 100 (centum)</li>
-    <li><strong>D</strong> 500 (quingenti)</li>
-    <li><strong>M</strong> 1,000 (mille)</li>
-</ul>
-<p>Weitere Informationen über römische Ziffern findest Du in diesem
-    <a href="https://de.wikipedia.org/wiki/R%C3%B6mische_Zahlschrift"
-       target="_blank">Wikipedia Artikel.</a><br>
-    In dieser Aufgabe sollst Du aus dem vorgegebenen Integerwert, im Bereich von
-    1 bis 3999, die römische Zahl ermitteln und zurückgeben.</p>
+
+<table>
+  <tr><th>Numeral</th><th>Value</th></tr>
+  <tr><td>I</td><td>1 (unus)</td></tr>
+  <tr><td>V</td><td>5 (quinque)</td></tr>
+  <tr><td>X</td><td>10 (decem)</td></tr>
+  <tr><td>L</td><td>50 (quinquaginta)</td></tr>
+  <tr><td>C</td><td>100 (centum)</td></tr>
+  <tr><td>D</td><td>500 (quingenti)</td></tr>
+  <tr><td>M</td><td>1,000 (mille)</td></tr>
+</table>
 
 <p>
-    <strong>Eingabe: </strong> Eine Zahl als Integer.
+  Weitere Informationen über römische Ziffern findest Du in diesem
+  <a href="https://de.wikipedia.org/wiki/R%C3%B6mische_Zahlschrift"
+  target="_blank">Wikipedia Artikel.</a><br>
+  In dieser Aufgabe sollst Du aus dem vorgegebenen Integerwert, im Bereich von
+  1 bis 3999, die römische Zahl ermitteln und zurückgeben.
 </p>
 
 <p>
-    <strong>Ausgabe: </strong> Die römische Zahl als String.
+  <strong>Eingabe: </strong> Eine Zahl als Integer.
+</p>
+
+<p>
+  <strong>Ausgabe: </strong> Die römische Zahl als String.
 </p>
 
 <div class="for_info_only">
-
-    <p>
-        <strong>Beispiele:</strong>
-    </p>
-    <pre class="brush: python">
-        checkio(6) == 'VI'
-        checkio(76) == 'LXXVI'
-        checkio(13) == 'XIII'
-        checkio(44) == 'XLIV'
-        checkio(3999) == 'MMMCMXCIX'
-    </pre>
+  <p>
+      <strong>Beispiele:</strong>
+  </p>
+  <pre class="brush: python">
+checkio(6) == 'VI'
+checkio(76) == 'LXXVI'
+checkio(13) == 'XIII'
+checkio(44) == 'XLIV'
+checkio(3999) == 'MMMCMXCIX'
+  </pre>
 </div>
 
 <p class="for_info_only">
-    <strong>Wozu das gut ist: </strong><br>
-    Dies ist eine Lernaufgabe, in der Du andere Zahlensysteme erkunden musst.<br>
-    Römische Zahlen werden oft in der Typografie als Abgrenzung der einzelnen
-    Kapitel und Abschnitte verwendet.
-    Das Baujahr auf Gebäudeflächen und Ecksteinen wird häufig in römischen
-    Zahlen angegeben.<br>
-    Diese Zahlen haben viele andere Anwendungen in der modernen Welt.<br>
-    Und wer weiß, möglicherweise bekommst Du es ja mal mit jemandem aus dem
-    Alten Rom zu tun? ;)
+  <strong>Wozu das gut ist: </strong><br>
+  Dies ist eine Lernaufgabe, in der Du andere Zahlensysteme erkunden musst.<br>
+  Römische Zahlen werden oft in der Typografie als Abgrenzung der einzelnen
+  Kapitel und Abschnitte verwendet.
+  Das Baujahr auf Gebäudeflächen und Ecksteinen wird häufig in römischen
+  Zahlen angegeben.<br>
+  Diese Zahlen haben viele andere Anwendungen in der modernen Welt.<br>
+  Und wer weiß, möglicherweise bekommst Du es ja mal mit jemandem aus dem
+  Alten Rom zu tun? ;)
 </p>
 
 <p>

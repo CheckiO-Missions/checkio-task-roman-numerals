@@ -1,66 +1,83 @@
+<style>
+table {
+  margin: auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+td, th {
+  border: 1px solid black;
+  padding: 8px;
+  width: 50%;
+}
+</style>
+
 <div style="text-align: center">
-        <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
+  <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
 </div>
+
 <p>
-    La numération romaine vient du système numérique des Romains de l'Antiquité.
-    Elle est basée sur des lettres spécifiques de l'alphabet qui, combinées, représentent la somme
-    (ou, dans certains cas, la différence) de leur valeur. Les dix premiers 
-    nombres romains sont :
+  La numération romaine vient du système numérique des Romains de l'Antiquité.
+  Elle est basée sur des lettres spécifiques de l'alphabet qui, combinées, représentent la somme
+  (ou, dans certains cas, la différence) de leur valeur. Les dix premiers
+  nombres romains sont :
 </p>
+
 <p>I, II, III, IV, V, VI, VII, VIII, IX et X.</p>
 <p>
-    La numération romaine est un système décimal mais pas de position et n'inclut pas
-    de zéro. Les nombres romains sont basés sur une combinaison de ces sept symboles :
+  La numération romaine est un système décimal mais pas de position et n'inclut pas
+  de zéro. Les nombres romains sont basés sur une combinaison de ces sept symboles :
 </p>
-<ul>
-    <li>Symbole Valeur</li>
-<li><strong>I</strong> 1 (unus)</li>
-<li><strong>V</strong> 5 (quinque)</li>
-<li><strong>X</strong> 10 (decem)</li>
-<li><strong>L</strong> 50 (quinquaginta)</li>
-<li><strong>C</strong> 100 (centum)</li>
-<li><strong>D</strong> 500 (quingenti)</li>
-<li><strong>M</strong> 1,000 (mille)</li>
-    </ul>
+
+<table>
+  <tr><th>Numeral</th><th>Value</th></tr>
+  <tr><td>I</td><td>1 (unus)</td></tr>
+  <tr><td>V</td><td>5 (quinque)</td></tr>
+  <tr><td>X</td><td>10 (decem)</td></tr>
+  <tr><td>L</td><td>50 (quinquaginta)</td></tr>
+  <tr><td>C</td><td>100 (centum)</td></tr>
+  <tr><td>D</td><td>500 (quingenti)</td></tr>
+  <tr><td>M</td><td>1,000 (mille)</td></tr>
+</table>
+
 <p>Plus d'informations sur les chiffres romains sont disponibles sur
-    <a href="https://fr.wikipedia.org/wiki/Num%C3%A9ration_romaine"
-       target="_blank">l'article Wikipedia.</a>
+  <a href="https://fr.wikipedia.org/wiki/Num%C3%A9ration_romaine"
+  target="_blank">l'article Wikipedia.</a>
 </p>
 <p>Pour cette mission, vous devez retourner un nombre romain à partir d'un nombre entier donné, compris entre 1 et 3999.</p>
 
 <p>
-    <strong>Données : </strong>Un nombre entier (integer).
+  <strong>Données : </strong>Un nombre entier (integer).
 </p>
 
 <p>
-    <strong>Résultat : </strong>Le nombre romain en une chaîne de caractères (string).
+  <strong>Résultat : </strong>Le nombre romain en une chaîne de caractères (string).
 </p>
 
 <div class="for_info_only">
+  <p>
+    <strong>Exemple :</strong>
+  </p>
 
-    <p>
-        <strong>Exemple :</strong>
-    </p>
-    <pre class="brush: python">checkio(6) == 'VI'
+  <pre class="brush: python">checkio(6) == 'VI'
 checkio(76) == 'LXXVI'
 checkio(13) == 'XIII'
 checkio(44) == 'XLIV'
 checkio(3999) == 'MMMCMXCIX'
-</pre>
+  </pre>
 </div>
 
 <p class="for_info_only">
-    <strong>Utilisation :</strong>
-    C'est une mission éducative qui vous laisse explorer différent systèmes de numération.
-    Les nombres romains étant souvent utilisés en typographie,
-    ce peut également être utilisé pour générer du texte.
+  <strong>Utilisation :</strong>
+  C'est une mission éducative qui vous laisse explorer différent systèmes de numération.
+  Les nombres romains étant souvent utilisés en typographie,
+  ce peut également être utilisé pour générer du texte.
 
-    L'année de construction de la facade et de la pierre d'angle d'un bâtiment est souvent écrite en nombre romain.
-    Ces nombres ont de nombreux autres usages dans le monde moderne, vous pouvez en apprendre plus
-    <a href="https://fr.wikipedia.org/wiki/Num%C3%A9ration_romaine#Utilisations_contemporaines">ici...</a>
-    Ou peut-être aurez vous un Romain de l'Antiquité pour client ;)
+  L'année de construction de la facade et de la pierre d'angle d'un bâtiment est souvent écrite en nombre romain.
+  Ces nombres ont de nombreux autres usages dans le monde moderne, vous pouvez en apprendre plus
+  <a href="https://fr.wikipedia.org/wiki/Num%C3%A9ration_romaine#Utilisations_contemporaines">ici...</a>
+  Ou peut-être aurez vous un Romain de l'Antiquité pour client ;)
 </p>
 
 <p>
-    <strong>Précondition :</strong> 0 &lt; number &lt; 4000
+  <strong>Précondition :</strong> 0 &lt; number &lt; 4000
 </p>

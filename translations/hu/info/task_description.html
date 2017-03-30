@@ -1,69 +1,88 @@
+<style>
+  table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  td, th {
+    border: 1px solid black;
+    padding: 8px;
+    width: 50%;
+  }
+</style>
+
 <div style="text-align: center">
-        <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
+  <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
 </div>
 
 <p>
-    A római számítás az ókori Rómából származik. Az ábécé kiválasztott betűi szolgálnak 
-    e számrendszer alapjául, amelyek különféle kombinációikkal, összegzéssel (néha még 
-    kivonással is) írják le a különböző számokat. Az első 10 római szám:
+  A római számítás az ókori Rómából származik. Az ábécé kiválasztott betűi szolgálnak
+  e számrendszer alapjául, amelyek különféle kombinációikkal, összegzéssel (néha még
+  kivonással is) írják le a különböző számokat. Az első 10 római szám:
 </p>
+
 <p>I, II, III, IV, V, VI, VII, VIII, IX és X.</p>
+
 <p>
-    A római számítás tízes alapú, ám nem helyértékes rendszer és nem tartalmazza a 
-    0 (nullát) sem. A római számok a következő hét betű kombinációjából állnak össze:
+  A római számítás tízes alapú, ám nem helyértékes rendszer és nem tartalmazza a
+  0 (nullát) sem. A római számok a következő hét betű kombinációjából állnak össze:
 </p>
-<ul>
-    <li>Betű – Érték</li>
-<li><strong>I</strong> 1 (unus)</li>
-<li><strong>V</strong> 5 (quinque)</li>
-<li><strong>X</strong> 10 (decem)</li>
-<li><strong>L</strong> 50 (quinquaginta)</li>
-<li><strong>C</strong> 100 (centum)</li>
-<li><strong>D</strong> 500 (quingenti)</li>
-<li><strong>M</strong> 1,000 (mille)</li>
-    </ul>
-<p>A római számításról részletesebben a 
-    <a href="http://hu.wikipedia.org/wiki/R%C3%B3mai_sz%C3%A1m%C3%ADr%C3%A1s"
-       target="_blank">Wikipédiában</a> olvashatunk.
-</p>
+
+<table>
+  <tr><th>Numeral</th><th>Value</th></tr>
+  <tr><td>I</td><td>1 (unus)</td></tr>
+  <tr><td>V</td><td>5 (quinque)</td></tr>
+  <tr><td>X</td><td>10 (decem)</td></tr>
+  <tr><td>L</td><td>50 (quinquaginta)</td></tr>
+  <tr><td>C</td><td>100 (centum)</td></tr>
+  <tr><td>D</td><td>500 (quingenti)</td></tr>
+  <tr><td>M</td><td>1,000 (mille)</td></tr>
+</table>
+
 <p>
-    Ebben a feladatban át kell alakítani egy egész számot (1-től 3999-ig) római számmá.
+  A római számításról részletesebben a
+  <a href="http://hu.wikipedia.org/wiki/R%C3%B3mai_sz%C3%A1m%C3%ADr%C3%A1s"
+  target="_blank">Wikipédiában</a> olvashatunk.
 </p>
 
 <p>
-    <strong>Bemeneti adatok: </strong> az átalakítandó szám egész számként (int) megadva.
+  Ebben a feladatban át kell alakítani egy egész számot (1-től 3999-ig) római számmá.
 </p>
 
 <p>
-    <strong>Kimeneti adatok: </strong> a római szám karakterláncként (str).
+  <strong>Bemeneti adatok: </strong> az átalakítandó szám egész számként (int) megadva.
+</p>
+
+<p>
+  <strong>Kimeneti adatok: </strong> a római szám karakterláncként (str).
 </p>
 
 <div class="for_info_only">
+  <p>
+    <strong>Példák:</strong>
+  </p>
 
-    <p>
-        <strong>Példák:</strong>
-    </p>
-    <pre class="brush: python">checkio(6) == 'VI'
+  <pre class="brush: python">checkio(6) == 'VI'
 checkio(76) == 'LXXVI'
 checkio(13) == 'XIII'
 checkio(44) == 'XLIV'
 checkio(3999) == 'MMMCMXCIX'
-</pre>
+  </pre>
 </div>
 
 <p class="for_info_only">
-    <strong>Alkalmazása: </strong>
-    Ez a feladat ismeretterjesztési jelleget visel, és célja hogy megismertessen minket a 
-    különböző számítási rendserekkel. A római számokat gyakran használják a 
-    nyomdászatban és hasznos lehet a dokumentumok kezelésénél is. Az épületek 
-    építésének dátumát gyakran tüntetik fel a homlokzatokon és szegletköveken 
-    római számokkal. Ennek a számítási rendszernek sok más alkalmazása is van 
-    manapság, amiről részletesebben (angolul) 
-    <a href="http://en.wikipedia.org/wiki/Roman_numerals#Modern_usage">itt</a>
-    olvashatunk. Lehet, hogy szüksége lesz arra, hogy valakinek az Ókori Rómából 
-    írjon egy számítógépes programot ;-)   
+  <strong>Alkalmazása: </strong>
+  Ez a feladat ismeretterjesztési jelleget visel, és célja hogy megismertessen minket a
+  különböző számítási rendserekkel. A római számokat gyakran használják a
+  nyomdászatban és hasznos lehet a dokumentumok kezelésénél is. Az épületek
+  építésének dátumát gyakran tüntetik fel a homlokzatokon és szegletköveken
+  római számokkal. Ennek a számítási rendszernek sok más alkalmazása is van
+  manapság, amiről részletesebben (angolul)
+  <a href="http://en.wikipedia.org/wiki/Roman_numerals#Modern_usage">itt</a>
+  olvashatunk. Lehet, hogy szüksége lesz arra, hogy valakinek az Ókori Rómából
+  írjon egy számítógépes programot ;-)
 </p>
 
 <p>
-    <strong>Előfeltételek:</strong> 0 &lt; number &lt; 4000
+  <strong>Előfeltételek:</strong> 0 &lt; number &lt; 4000
 </p>
