@@ -1,65 +1,83 @@
+<style>
+  .numeral-table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+  }
+  .numeral-table * {
+    border: 1px solid black;
+    padding: 8px;
+    width: 50%;
+  }
+</style>
+
 <div style="text-align: center">
-        <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
+  <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
 </div>
+
 <p>
-    Os números romanos vêm do antigo sistema de numeração da Roma.
-    Eles são baseados na combinação de letras específicas do alfabeto que são combinadas para representar a soma
-    (ou, em alguns casos, a subtraçao) de seus valores. Os primeiros dez números
-    romanos são:
+  Os números romanos vêm do antigo sistema de numeração da Roma.
+  Eles são baseados na combinação de letras específicas do alfabeto que são combinadas para representar a soma
+  (ou, em alguns casos, a subtraçao) de seus valores. Os primeiros dez números
+  romanos são:
 </p>
+
 <p>I, II, III, IV, V, VI, VII, VIII, IX e X.</p>
+
 <p>
-    O sistema dos números Romanos é baseado no decimal, mas não diretamente posicional e não
-    inclui o zero. Os números romanos são baseados na combinação destes sete símbolos:
+  O sistema dos números Romanos é baseado no decimal, mas não diretamente posicional e não
+  inclui o zero. Os números romanos são baseados na combinação destes sete símbolos:
 </p>
-<ul>
-    <li>Símbolo Valor</li>
-<li><strong>I</strong> 1 (unus)</li>
-<li><strong>V</strong> 5 (quinque)</li>
-<li><strong>X</strong> 10 (decem)</li>
-<li><strong>L</strong> 50 (quinquaginta)</li>
-<li><strong>C</strong> 100 (centum)</li>
-<li><strong>D</strong> 500 (quingenti)</li>
-<li><strong>M</strong> 1.000 (mille)</li>
-    </ul>
+
+<table class="numeral-table">
+  <tr><th>Símbolo</th><th>Valor</th></tr>
+  <tr><td>I</td><td>1 (unus)</td></tr>
+  <tr><td>V</td><td>5 (quinque)</td></tr>
+  <tr><td>X</td><td>10 (decem)</td></tr>
+  <tr><td>L</td><td>50 (quinquaginta)</td></tr>
+  <tr><td>C</td><td>100 (centum)</td></tr>
+  <tr><td>D</td><td>500 (quingenti)</td></tr>
+  <tr><td>M</td><td>1,000 (mille)</td></tr>
+</table>
+
 <p>Mais informações sobre os números Romanos podem ser encontradas no
-    <a href="http://pt.wikipedia.org/wiki/Numeração_romana"
-       target="_blank">artigo da Wikipedia.</a>
+  <a href="http://pt.wikipedia.org/wiki/Numeração_romana"
+  target="_blank">artigo da Wikipedia.</a>
 </p>
+
 <p>Para essa missão, você deve retornar um número romano usando o número inteiro especificado que vai de 1 a 3999.</p>
 
 <p>
-    <strong>Entrada: </strong> Um número inteiro.
+  <strong>Entrada: </strong> Um número inteiro.
 </p>
 
 <p>
-    <strong>Saída: </strong> O número romano em string.
+  <strong>Saída: </strong> O número romano em string.
 </p>
 
 <div class="for_info_only">
-
-    <p>
-        <strong>Exemplo:</strong>
-    </p>
-    <pre class="brush: python">checkio(6) == 'VI'
+  <p>
+    <strong>Exemplo:</strong>
+  </p>
+  <pre class="brush: python">checkio(6) == 'VI'
 checkio(76) == 'LXXVI'
 checkio(13) == 'XIII'
 checkio(44) == 'XLIV'
 checkio(3999) == 'MMMCMXCIX'
-</pre>
+  </pre>
 </div>
 
 <p class="for_info_only">
-    <strong>Onde é usado: </strong>
-    Este é uma missão educacional que permite explorar diferentes sistemas de numeração.
-    Desde que sistemas de numeração são frequentemente utilizados na tipografia,
-    podem ser usados na criação de textos.
-    O ano da contrução de estrutura em pilares é frequentemente escrito com números Romanos.
-    Estes números têm muitas outras utilidades no mundo moderno e você pode ler sobre isto (em inglês)
-    <a href="http://en.wikipedia.org/wiki/Roman_numerals#Modern_usage">aqui...</a>
-    Ou talvez você tenha um cliente da antiga Roma ;-)
+  <strong>Onde é usado: </strong>
+  Este é uma missão educacional que permite explorar diferentes sistemas de numeração.
+  Desde que sistemas de numeração são frequentemente utilizados na tipografia,
+  podem ser usados na criação de textos.
+  O ano da contrução de estrutura em pilares é frequentemente escrito com números Romanos.
+  Estes números têm muitas outras utilidades no mundo moderno e você pode ler sobre isto (em inglês)
+  <a href="http://en.wikipedia.org/wiki/Roman_numerals#Modern_usage">aqui...</a>
+  Ou talvez você tenha um cliente da antiga Roma ;-)
 </p>
 
 <p>
-    <strong>Condições prévias:</strong> 0 &lt; número &lt; 4000
+  <strong>Condições prévias:</strong> 0 &lt; número &lt; 4000
 </p>
