@@ -11,8 +11,8 @@
   }
 </style>
 
-<div style="text-align: center">
-  <img src="{{MEDIA}}title.png" style="max-height: 350px; max-width: 100%">
+<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}title.png" style="max-height: 350px">
 </div>
 
 <p>
@@ -67,13 +67,21 @@
   <p>
       <strong>Beispiele:</strong>
   </p>
-  <pre class="brush: python">
-checkio(6) == 'VI'
-checkio(76) == 'LXXVI'
-checkio(13) == 'XIII'
-checkio(44) == 'XLIV'
-checkio(3999) == 'MMMCMXCIX'
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: python">romanNumerals(6) == 'VI'
+  romanNumerals(76) == 'LXXVI'
+  romanNumerals(13) == 'XIII'
+  romanNumerals(44) == 'XLIV'
+  romanNumerals(3999) == 'MMMCMXCIX'
   </pre>
+{% else %}
+  <pre class="brush: python">checkio(6) == 'VI'
+  checkio(76) == 'LXXVI'
+  checkio(13) == 'XIII'
+  checkio(44) == 'XLIV'
+  checkio(3999) == 'MMMCMXCIX'
+  </pre>
+{% endif %}
 </div>
 
 <p class="for_info_only">

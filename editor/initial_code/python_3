@@ -9,3 +9,4 @@ if __name__ == '__main__':
     assert checkio(76) == 'LXXVI', '76'
     assert checkio(499) == 'CDXCIX', '499'
     assert checkio(3888) == 'MMMDCCCLXXXVIII', '3888'
+    print('Done! Go Check!')

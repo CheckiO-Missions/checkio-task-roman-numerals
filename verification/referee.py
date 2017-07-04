@@ -6,4 +6,8 @@ from tests import TESTS
 
 api.add_listener(
     ON_CONNECT,
-    CheckiOReferee(tests=TESTS).on_ready)
+    CheckiOReferee(tests=TESTS,
+        function_name={
+            "python": "checkio",
+            "js": "romanNumerals"
+        }).on_ready)
