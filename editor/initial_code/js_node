@@ -1,8 +1,8 @@
 import assert from "assert";
 
-function romanNumerals(a) {
+function romanNumerals(data: number): string {
     // your code here
-    return undefined;
+    return 'I';
 }
 
 console.log('Example:');
